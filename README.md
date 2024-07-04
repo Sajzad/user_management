@@ -51,6 +51,7 @@ This project demonstrates how to use custom middleware, permissions, and seriali
     ```
     http://127.0.0.1:8000/admin/
     ```
+    Create a manager User manually from Admin panel.
 
 7. **Usage**
 
@@ -60,6 +61,7 @@ This project demonstrates how to use custom middleware, permissions, and seriali
       ```
       http://127.0.0.1:8000/swagger/
       ```
+      Use the `authentication_token` in the Authorize popup to access the API based on the user type.
 
     OR
 
