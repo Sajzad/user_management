@@ -30,7 +30,6 @@ This project demonstrates how to use custom middleware, permissions, and seriali
 3. **Apply Migrations**
 
     ```sh
-    python manage.py makemigrations
     python manage.py migrate
     ```
 
