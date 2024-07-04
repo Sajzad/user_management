@@ -1,13 +1,6 @@
 # User Management API with DRF
 
-This Django project demonstrates how to use custom middleware, permissions, and serializers to manage API access based on user roles. It also includes Swagger for API documentation.
-
-## Features
-
-- Custom authentication using tokens
-- Custom middleware to log request details
-- Different serializers and permissions based on HTTP methods
-- Swagger for API documentation
+This project demonstrates how to use custom middleware, permissions, and serializers to manage API access based on user roles. It also includes Swagger for API documentation.
 
 ## Setup
 
@@ -21,8 +14,8 @@ This Django project demonstrates how to use custom middleware, permissions, and 
 1. **Clone the Repository**
 
     ```sh
-    git clone https://github.com/yourusername/yourrepository.git
-    cd yourrepository
+    git clone https://github.com/Sajzad/user_management.git
+    cd user_management
     ```
 
 2. **Install Dependencies**
@@ -52,19 +45,32 @@ This Django project demonstrates how to use custom middleware, permissions, and 
     ```sh
     python manage.py runserver
     ```
-6. **Access the admin panel at**
-   http://127.0.0.1:8000/admin/
 
-6. **Usage**
-   To make a request with a token:
+6. **Access the Admin Panel**
 
-   Access the Swagger documentation at:
-    http://127.0.0.1:8000/swagger/
-  OR
-   curl -X 'GET' \
-  'http://127.0.0.1:8000/API/users/' \
-  -H 'accept: application/json' \
-  -H 'authentication_token: your_token_here'
+    Open your web browser and go to:
+    ```
+    http://127.0.0.1:8000/admin/
+    ```
 
-  Replace your_token_here with the actual token value.
+7. **Usage**
 
+    To make a request with a token:
+
+    - Access the Swagger documentation at:
+      ```
+      http://127.0.0.1:8000/swagger/
+      ```
+
+    OR
+
+    - Use `curl` to make a request:
+
+      ```sh
+      curl -X 'GET' \
+      'http://127.0.0.1:8000/API/users/' \
+      -H 'accept: application/json' \
+      -H 'Authorization: your_token_here'
+      ```
+
+      Replace `Authorization` with the actual token value.
